@@ -5,6 +5,8 @@
  */
 package ejercicio;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author DanielDeJesus
@@ -27,21 +29,161 @@ public class Interfaz11 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtMontoP = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtPGinecologia = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txtPTraumatologia = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        txtPPediatria = new javax.swing.JTextField();
+        cmdCalcular = new javax.swing.JButton();
+        cmdBorrar = new javax.swing.JButton();
+
+        jLabel3.setText("jLabel3");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 14)); // NOI18N
+        jLabel1.setText("Ejercicio Número 11: Determinar el dinero que recibirá cada área");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+
+        jLabel2.setText("Monto presupuestal:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, -1, -1));
+
+        txtMontoP.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtMontoPKeyTyped(evt);
+            }
+        });
+        jPanel1.add(txtMontoP, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 100, -1));
+
+        jLabel4.setText("Presupuesto Ginecología:");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+
+        txtPGinecologia.setEditable(false);
+        txtPGinecologia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPGinecologiaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtPGinecologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 80, -1));
+
+        jLabel5.setText("Presupuesto Traumatología:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, -1));
+
+        txtPTraumatologia.setEditable(false);
+        txtPTraumatologia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPTraumatologiaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtPTraumatologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 80, -1));
+
+        jLabel6.setText("Presupuesto Pediatría:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, -1, -1));
+
+        txtPPediatria.setEditable(false);
+        txtPPediatria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPPediatriaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtPPediatria, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 90, -1));
+
+        cmdCalcular.setText("Calcular");
+        cmdCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdCalcularActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
+
+        cmdBorrar.setText("Borrar");
+        cmdBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdBorrarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cmdBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtPGinecologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPGinecologiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPGinecologiaActionPerformed
+
+    private void txtPTraumatologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPTraumatologiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPTraumatologiaActionPerformed
+
+    private void txtPPediatriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPPediatriaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPPediatriaActionPerformed
+
+    private void txtMontoPKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMontoPKeyTyped
+        char c=evt.getKeyChar();
+        
+        if(!Character.isDigit(c)){
+            getToolkit().beep();
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtMontoPKeyTyped
+
+    private void cmdBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBorrarActionPerformed
+        txtMontoP.setText("");
+        txtPGinecologia.setText("");
+        txtPPediatria.setText("");
+        txtPTraumatologia.setText("");
+        
+        txtMontoP.requestFocusInWindow();
+    }//GEN-LAST:event_cmdBorrarActionPerformed
+
+    private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
+        String res, res2, res3;
+        double mPresupuestal, opG, opT, opP;
+        
+        if(txtMontoP.getText().trim().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Digite el monto presupuestal", "Error", JOptionPane.ERROR_MESSAGE);
+            txtMontoP.requestFocusInWindow();
+        }
+        else{
+            mPresupuestal = Double.parseDouble(txtMontoP.getText());
+            
+            opG = mPresupuestal * 0.40;
+            opT = mPresupuestal * 0.30;
+            opP = mPresupuestal * 0.30;
+            
+            res = String.valueOf(opG);
+            res2 = String.valueOf(opT);
+            res3 = String.valueOf(opP);
+            
+            txtPGinecologia.setText(res);
+            txtPPediatria.setText(res2);
+            txtPTraumatologia.setText(res3);
+            
+            
+        }            
+        
+        
+    }//GEN-LAST:event_cmdCalcularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +221,18 @@ public class Interfaz11 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdBorrar;
+    private javax.swing.JButton cmdCalcular;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField txtMontoP;
+    private javax.swing.JTextField txtPGinecologia;
+    private javax.swing.JTextField txtPPediatria;
+    private javax.swing.JTextField txtPTraumatologia;
     // End of variables declaration//GEN-END:variables
 }
